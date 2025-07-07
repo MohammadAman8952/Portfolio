@@ -4,6 +4,7 @@ import path from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/Portfolio/',  // <-- ✅ This is crucial for GitHub Pages
   plugins: [react()],
   resolve: {
     alias: {
@@ -11,5 +12,3 @@ export default defineConfig({
     },
   },
 })
-//npm install lucide-react react-router-dom tailwind-merge
-// now for ui npm install @radix-ui/react-toast class-variance-authority clsx
